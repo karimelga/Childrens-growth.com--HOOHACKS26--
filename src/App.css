@@ -1,0 +1,189 @@
+/* ─── Reset & Base ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #1a202c;
+  line-height: 1.5;
+}
+
+/* ─── App Shell ─── */
+.app { display: flex; flex-direction: column; min-height: 100vh; }
+
+.app-header {
+  background: #2b6cb0;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+.app-header h1 { font-size: 1.5rem; font-weight: 700; }
+.app-subtitle { font-size: 0.9rem; opacity: 0.85; margin-top: 0.25rem; }
+
+.app-body {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* ─── Input Panel ─── */
+.input-panel-container {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.input-panel {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.input-panel h2 { font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; }
+
+.input-section { margin-bottom: 1.25rem; }
+.input-section h3 { font-size: 0.8rem; text-transform: uppercase; color: #718096; font-weight: 600; margin-bottom: 0.5rem; }
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-number {
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+.radio-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.radio-label { display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; cursor: pointer; }
+
+.input-hint { font-size: 0.8rem; color: #718096; margin-bottom: 0.5rem; }
+
+.slider-label { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 0.75rem; }
+.slider-name { font-size: 0.875rem; font-weight: 500; }
+.slider-row { display: flex; align-items: center; gap: 0.5rem; }
+.slider { flex: 1; accent-color: #2b6cb0; }
+.slider-value { font-size: 0.875rem; font-weight: 600; width: 2rem; text-align: right; color: #2b6cb0; }
+
+/* ─── Main Panel ─── */
+.main-panel { flex: 1; display: flex; flex-direction: column; gap: 1rem; min-width: 0; }
+
+/* ─── Banners ─── */
+.banner {
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.banner-warning {
+  background: #fefcbf;
+  border: 1px solid #ecc94b;
+  color: #744210;
+}
+
+/* ─── Map ─── */
+.map-container {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Over-budget marker */
+.marker-grey {
+  width: 25px;
+  height: 41px;
+  background: url('https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png') no-repeat center/contain;
+  filter: grayscale(100%) opacity(0.5);
+}
+
+/* Popup */
+.popup-content { display: flex; flex-direction: column; gap: 0.3rem; min-width: 140px; }
+.popup-archetype { font-size: 0.75rem; color: #718096; }
+.popup-score { font-size: 0.875rem; }
+.popup-btn {
+  margin-top: 0.25rem;
+  padding: 0.35rem 0.75rem;
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.popup-btn:hover { background: #2c5282; }
+.popup-warning { font-size: 0.75rem; color: #744210; margin-top: 0.25rem; }
+
+/* ─── Score Card ─── */
+.score-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.score-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.score-card-title { font-size: 1.25rem; font-weight: 700; }
+.score-card-archetype { font-size: 0.875rem; color: #718096; margin-top: 0.15rem; }
+
+.final-score {
+  display: flex;
+  align-items: baseline;
+  gap: 0.1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.final-score-number { font-size: 2rem; }
+.final-score-label { font-size: 1rem; opacity: 0.7; }
+
+/* Score color classes */
+.score-green { background: #c6f6d5; color: #22543d; }
+.score-yellow { background: #fefcbf; color: #744210; }
+.score-red { background: #fed7d7; color: #822727; }
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.pillar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  background: #f7fafc;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+}
+.pillar-label { font-size: 0.75rem; color: #718096; font-weight: 600; text-transform: uppercase; }
+.pillar-score { font-size: 1rem; font-weight: 700; padding: 0.2rem 0.4rem; border-radius: 4px; display: inline-block; }
+
+/* ─── AI Explanation ─── */
+.ai-explanation {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+}
+.ai-explanation-title { font-size: 0.875rem; font-weight: 700; color: #4a5568; margin-bottom: 0.5rem; }
+.ai-text { font-size: 0.9rem; line-height: 1.7; color: #2d3748; }
+.ai-loading { font-size: 0.875rem; color: #718096; font-style: italic; }
+.ai-error { font-size: 0.875rem; color: #c53030; }
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .app-body { flex-direction: column; }
+  .input-panel-container { width: 100%; }
+  .pillar-grid { grid-template-columns: 1fr 1fr; }
+}

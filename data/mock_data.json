@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "county": "Fairfax County, Virginia",
+    "data_version": "1.0",
+    "score_scale": "All sub-metric scores are on a 0-100 scale (higher = better), except where marked (inverted), which means a lower real-world value produces a higher score.",
+    "notes": "Data is approximated from publicly available Fairfax County school ratings, FCPD crime statistics, Walk Score data, and US Census community profiles. Intended for demo/hackathon use."
+  },
+  "zip_codes": {
+    "22101": {
+      "label": "McLean",
+      "archetype": "The Expensive Suburb",
+      "average_home_price": 1650000,
+      "average_rent": 3800,
+      "pillars": {
+        "education": {
+          "pillar_score": 94,
+          "sub_metrics": {
+            "school_quality_rating": 96,
+            "special_needs_accessibility": 88,
+            "peer_academic_culture": 97
+          },
+          "notes": "Home to McLean High School and Langley High School, consistently ranked among Virginia's top public schools. High parental involvement and strong AP/IB offerings."
+        },
+        "social_development": {
+          "pillar_score": 72,
+          "sub_metrics": {
+            "community_cohesion": 70,
+            "bullying_rate": 74,
+            "mental_health_index": 68,
+            "political_diversity": 55
+          },
+          "notes": "Wealthy, homogeneous community. High academic pressure contributes to elevated youth stress and mental health concerns. Low political diversity — heavily left-leaning professional demographic."
+        },
+        "safety": {
+          "pillar_score": 91,
+          "sub_metrics": {
+            "crime_trend_score": 93,
+            "sex_offender_density": 95,
+            "neighborhood_stability": 88,
+            "noise_disorder_level": 90
+          },
+          "notes": "One of the safest areas in Fairfax County. Very low violent crime. Quiet, residential streets with low turnover. Proximity to CIA headquarters adds a layer of security infrastructure."
+        },
+        "infrastructure": {
+          "pillar_score": 74,
+          "sub_metrics": {
+            "hospital_proximity": 78,
+            "library_access": 80,
+            "parks_green_space": 85,
+            "daycare_density": 70,
+            "tutoring_availability": 90,
+            "walkability": 38
+          },
+          "notes": "Car-dependent area (Walk Score ~28-40). Good access to Inova Fairfax Hospital (10-15 min drive). Excellent private tutoring ecosystem. Limited walkable amenities."
+        }
+      }
+    },
+    "20190": {
+      "label": "Reston",
+      "archetype": "The Urban Center",
+      "average_home_price": 620000,
+      "average_rent": 2400,
+      "pillars": {
+        "education": {
+          "pillar_score": 78,
+          "sub_metrics": {
+            "school_quality_rating": 80,
+            "special_needs_accessibility": 82,
+            "peer_academic_culture": 73
+          },
+          "notes": "South Lakes High School serves the area — solid but not top-tier. Strong special education support through FCPS. Diverse student body creates a mixed but generally positive peer culture."
+        },
+        "social_development": {
+          "pillar_score": 82,
+          "sub_metrics": {
+            "community_cohesion": 85,
+            "bullying_rate": 78,
+            "mental_health_index": 80,
+            "political_diversity": 84
+          },
+          "notes": "One of the most intentionally planned communities on the East Coast. Strong HOA-driven community events, high ethnic and economic diversity, and robust civic identity."
+        },
+        "safety": {
+          "pillar_score": 74,
+          "sub_metrics": {
+            "crime_trend_score": 72,
+            "sex_offender_density": 78,
+            "neighborhood_stability": 70,
+            "noise_disorder_level": 75
+          },
+          "notes": "Urban density brings moderately higher property crime rates. Reston Town Center area sees occasional incidents. Overall trending safer year-over-year per FCPD data."
+        },
+        "infrastructure": {
+          "pillar_score": 93,
+          "sub_metrics": {
+            "hospital_proximity": 90,
+            "library_access": 92,
+            "parks_green_space": 95,
+            "daycare_density": 91,
+            "tutoring_availability": 85,
+            "walkability": 88
+          },
+          "notes": "Reston Hospital Center is on-site. Walk Score ~78-88 near Town Center. Extensive trail network (55+ miles), multiple lakes. Silver Line Metro access. Excellent daycare options."
+        }
+      }
+    },
+    "22003": {
+      "label": "Annandale",
+      "archetype": "The Diverse Community",
+      "average_home_price": 520000,
+      "average_rent": 1950,
+      "pillars": {
+        "education": {
+          "pillar_score": 68,
+          "sub_metrics": {
+            "school_quality_rating": 65,
+            "special_needs_accessibility": 75,
+            "peer_academic_culture": 63
+          },
+          "notes": "Annandale High School is a majority-minority school with strong ESL and special ed programs. Academic outcomes are moderate but improving. High cultural richness in student body."
+        },
+        "social_development": {
+          "pillar_score": 91,
+          "sub_metrics": {
+            "community_cohesion": 94,
+            "bullying_rate": 82,
+            "mental_health_index": 88,
+            "political_diversity": 90
+          },
+          "notes": "One of the most culturally rich zip codes in Northern Virginia. Known for its large Korean and Latino communities. Very strong neighborhood identity, community festivals, and cultural pride. Excellent for raising globally-minded children."
+        },
+        "safety": {
+          "pillar_score": 66,
+          "sub_metrics": {
+            "crime_trend_score": 64,
+            "sex_offender_density": 70,
+            "neighborhood_stability": 65,
+            "noise_disorder_level": 66
+          },
+          "notes": "Moderate crime rates. Some property crime in commercial corridors. Neighborhood watch programs active. Generally safe residential blocks but higher density brings more incidents than outlying suburbs."
+        },
+        "infrastructure": {
+          "pillar_score": 77,
+          "sub_metrics": {
+            "hospital_proximity": 72,
+            "library_access": 80,
+            "parks_green_space": 74,
+            "daycare_density": 82,
+            "tutoring_availability": 76,
+            "walkability": 65
+          },
+          "notes": "Richly served by ethnic-owned small businesses, daycares, and cultural centers. Reasonable bus access. No Metro directly but close to I-495 access. Good library branch."
+        }
+      }
+    },
+    "22015": {
+      "label": "Burke",
+      "archetype": "The Quiet Suburb",
+      "average_home_price": 680000,
+      "average_rent": 2200,
+      "pillars": {
+        "education": {
+          "pillar_score": 85,
+          "sub_metrics": {
+            "school_quality_rating": 87,
+            "special_needs_accessibility": 83,
+            "peer_academic_culture": 86
+          },
+          "notes": "Lake Braddock Secondary School is a top-performing FCPS school. High graduation rates and strong extracurriculars. Stable, involved parent community."
+        },
+        "social_development": {
+          "pillar_score": 74,
+          "sub_metrics": {
+            "community_cohesion": 76,
+            "bullying_rate": 80,
+            "mental_health_index": 75,
+            "political_diversity": 62
+          },
+          "notes": "Quiet, primarily white-collar suburban community. Strong neighborhood association activity. Less cultural diversity than other zip codes. Kids grow up in a sheltered but stable environment."
+        },
+        "safety": {
+          "pillar_score": 93,
+          "sub_metrics": {
+            "crime_trend_score": 95,
+            "sex_offender_density": 92,
+            "neighborhood_stability": 94,
+            "noise_disorder_level": 92
+          },
+          "notes": "Consistently one of the lowest crime areas in Fairfax County. Extremely stable homeownership rates, long-term residents. Very quiet residential character."
+        },
+        "infrastructure": {
+          "pillar_score": 61,
+          "sub_metrics": {
+            "hospital_proximity": 60,
+            "library_access": 72,
+            "parks_green_space": 78,
+            "daycare_density": 60,
+            "tutoring_availability": 65,
+            "walkability": 28
+          },
+          "notes": "Highly car-dependent (Walk Score ~25-35). Limited public transit. Burke Centre Park system is good. Nearest hospital is a 20+ min drive. Sparse daycare options relative to population."
+        }
+      }
+    },
+    "22030": {
+      "label": "Fairfax City",
+      "archetype": "The Balanced Hub",
+      "average_home_price": 595000,
+      "average_rent": 2100,
+      "pillars": {
+        "education": {
+          "pillar_score": 80,
+          "sub_metrics": {
+            "school_quality_rating": 81,
+            "special_needs_accessibility": 84,
+            "peer_academic_culture": 78
+          },
+          "notes": "Fairfax High School and proximity to George Mason University creates a college-going culture. Solid FCPS schools with good STEM programs. University influence brings enrichment programs for kids."
+        },
+        "social_development": {
+          "pillar_score": 79,
+          "sub_metrics": {
+            "community_cohesion": 80,
+            "bullying_rate": 77,
+            "mental_health_index": 78,
+            "political_diversity": 80
+          },
+          "notes": "County seat brings civic engagement and a broad mix of residents — government workers, university staff, young families. Reasonably diverse and politically balanced."
+        },
+        "safety": {
+          "pillar_score": 80,
+          "sub_metrics": {
+            "crime_trend_score": 81,
+            "sex_offender_density": 82,
+            "neighborhood_stability": 79,
+            "noise_disorder_level": 78
+          },
+          "notes": "Safe overall with some incidents near Old Town Fairfax commercial areas. FCPD headquarters is located here. Generally trending positive on crime stats."
+        },
+        "infrastructure": {
+          "pillar_score": 83,
+          "sub_metrics": {
+            "hospital_proximity": 82,
+            "library_access": 90,
+            "parks_green_space": 80,
+            "daycare_density": 80,
+            "tutoring_availability": 82,
+            "walkability": 58
+          },
+          "notes": "Good library system (county central branch). Inova Fair Oaks Hospital nearby. Vienna Metro accessible. Solid mix of parks, daycares, and after-school programs. More walkable than outer suburbs."
+        }
+      }
+    }
+  }
+}
