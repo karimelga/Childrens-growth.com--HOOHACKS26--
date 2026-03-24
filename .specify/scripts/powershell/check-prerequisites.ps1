@@ -1,4 +1,3 @@
-#Do you see this
 #!/usr/bin/env pwsh
 
 # Consolidated prerequisite checking script (PowerShell)
